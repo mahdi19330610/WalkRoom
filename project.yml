@@ -1,0 +1,24 @@
+name: WalkRoom
+options:
+  deploymentTarget:
+    iOS: "15.0"
+targets:
+  WalkRoom:
+    type: application
+    platform: iOS
+    sources: [Sources]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.yourname.walkroom
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait
+        INFOPLIST_KEY_CFBundleDisplayName: Walk Room
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        TARGETED_DEVICE_FAMILY: "1"
+schemes:
+  WalkRoom:
+    build:
+      targets:
+        WalkRoom: all
